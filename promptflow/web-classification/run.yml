@@ -3,7 +3,7 @@ flow: .
 data: data.jsonl
 
 # define cloud resource
-runtime: Default_AzureOpenAI_Runtime
+runtime: PromptFlow-Runtime
 
 connections:
   classify_with_llm:
