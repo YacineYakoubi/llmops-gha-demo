@@ -34,7 +34,7 @@ jobs:
       run: pip install -r promptflow/web-classification/requirements.txt
     - name: Create Instance promptflow
       run: |
-        az ml compute create -f promptflow/web-classification/create-instance.yml
+        az ml compute create -f promptflow/web-classification/create-instance.yml --subscription ${{env.SUBSCRIPTION}} -g ${{env.GROUP}} -w ${{env.WORKSPACE}}
     - name: Run promptflow
       run: |
         pfazure run create --debug -f promptflow/web-classification/run.yml --subscription ${{env.SUBSCRIPTION}} -g ${{env.GROUP}} -w ${{env.WORKSPACE}} --stream > promptflow/llmops-helper/run_info.txt
