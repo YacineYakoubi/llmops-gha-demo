@@ -3,8 +3,8 @@ flow: .
 data: data.jsonl
 
 # define cloud resource
-runtime: PromptFlow-Runtime
-
+resources:
+    instance_type: Standard_E4s_v3 # use this part to specify instance type for batch run
 connections:
   classify_with_llm:
     connection: Default_AzureOpenAI_1
