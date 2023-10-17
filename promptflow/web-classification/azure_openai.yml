@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/promptflow/latest/AzureOpenAIConnection.schema.json
-name: Default_AzureOpenAI
+name: Default_AzureOpenAI_1
 type: azure_open_ai
 api_key: "baace72fe0d140bbbffc53ff3226047c"
 api_base: "https://openai-accelerator-yy.openai.azure.com/"
